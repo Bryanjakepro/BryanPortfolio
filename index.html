@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bryan | Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#080808;color:#fff}
+header{position:fixed;top:0;width:100%;z-index:10;background:#0b0b0bee;border-bottom:1px solid #222;padding:16px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{color:#00eaff;font-size:24px;font-weight:bold}
+nav{display:flex;gap:22px} nav a{color:#ddd;text-decoration:none} nav a:hover{color:#00eaff}
+section{min-height:100vh;padding:110px 8% 70px;display:flex;align-items:center;justify-content:center}
+#home{background:radial-gradient(circle at 80% 30%,#00eaff1c,transparent 35%)}
+.home{max-width:1100px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:50px}
+.home h1{font-size:clamp(45px,7vw,80px);margin:12px 0}.home h1 span,.title span{color:#00eaff}
+.home h3{color:#ccc;margin-bottom:18px}.home p,.card p{color:#aaa;line-height:1.7}
+.photo{width:320px;height:320px;flex:none}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:7px solid #222;box-shadow:0 0 35px #00eaff44}
+.btn{display:inline-block;margin-top:25px;margin-right:10px;padding:13px 23px;border:1px solid #00eaff;border-radius:30px;color:#00eaff;text-decoration:none}.btn:hover{background:#00eaff;color:#000}
+.dark{background:#0d0d0d}.wrap{width:100%;max-width:1100px}.title{text-align:center;margin-bottom:40px}.title h2{font-size:40px;margin-bottom:8px}.title p{color:#999}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#151515;border:1px solid #252525;border-radius:17px;padding:28px;transition:.25s}.card:hover{transform:translateY(-6px);border-color:#00eaff}.card h3{color:#00eaff;margin-bottom:12px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.skill{text-align:center}
+.project{min-height:190px}.contact{max-width:850px;margin:auto}.contact form{display:grid;gap:14px}.contact input,.contact textarea{background:#111;color:#fff;border:1px solid #292929;border-radius:10px;padding:14px;width:100%}.contact textarea{height:140px}.contact button{border:0;border-radius:25px;padding:14px;background:#00eaff;font-weight:bold;cursor:pointer}
+footer{text-align:center;padding:25px;color:#777;background:#050505}footer span{color:#00eaff}
+@media(max-width:800px){nav{gap:12px;font-size:13px}.home{flex-direction:column-reverse;text-align:center}.photo{width:230px;height:230px}.grid{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){header{padding:15px 5%}.logo{font-size:20px}nav{gap:9px;font-size:11px}.skills{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="logo">BRYAN.</div><nav>
+<a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</nav></header>
+
+<section id="home">
+<div class="home">
+<div><p style="color:#00eaff">HELLO, I'M</p><h1>Bryan <span>Jake</span></h1><h3>Aspiring Web Developer</h3>
+<p>I'm an ICT student passionate about technology, web development, programming, and creating digital projects.</p>
+<a class="btn" href="#projects">View Projects</a><a class="btn" href="#contact">Contact Me</a></div>
+<div class="photo"><img src="profile.png" alt="Bryan Profile Picture"></div>
+</div>
+</section>
+
+<section id="about" class="dark"><div class="wrap"><div class="title"><h2>About <span>Me</span></h2><p>Get to know me</p></div>
+<div class="grid"><div class="card"><h3>Who Am I?</h3><p>I'm Bryan, an ICT student interested in computers, programming, web development, and technology.</p></div>
+<div class="card"><h3>My Goal</h3><p>My goal is to improve my programming and IT skills and become a professional developer.</p></div>
+<div class="card"><h3>Education</h3><p>Currently developing skills in ICT, programming, web design, and software development.</p></div></div></div></section>
+
+<section id="skills"><div class="wrap"><div class="title"><h2>My <span>Skills</span></h2><p>Technologies I'm learning</p></div>
+<div class="skills"><div class="card skill"><h3>🌐 HTML</h3><p>Website structure.</p></div><div class="card skill"><h3>🎨 CSS</h3><p>Responsive design.</p></div><div class="card skill"><h3>⚡ JavaScript</h3><p>Interactive websites.</p></div><div class="card skill"><h3>💻 Programming</h3><p>Logic and software development.</p></div></div></div></section>
+
+<section id="projects" class="dark"><div class="wrap"><div class="title"><h2>My <span>Projects</span></h2><p>Things I'm building</p></div>
+<div class="grid"><div class="card project"><h3>🌐 Personal Portfolio</h3><p>A responsive portfolio made with HTML, CSS, and JavaScript.</p></div>
+<div class="card project"><h3>🎮 Game Server System</h3><p>Exploring server scripting and roleplay systems.</p></div>
+<div class="card project"><h3>🤖 Discord Bot</h3><p>Commands, verification, and server management systems.</p></div></div></div></section>
+
+<section id="contact"><div class="wrap contact"><div class="title"><h2>Contact <span>Me</span></h2><p>Let's connect</p></div>
+<div class="card"><form action="https://formsubmit.co/YOUR_GMAIL@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<input type="hidden" name="_subject" value="New Message From Bryan's Portfolio">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<button type="submit">Send Message</button>
+</form></div></div></section>
+
+<footer>© 2026 <span>Bryan</span>. All Rights Reserved.</footer>
+</body>
+</html>
